@@ -24,7 +24,7 @@ class Student
   end
 
   def self.drop_table
-   DB[:conn].execute(DROP TABLE students)
+    DROP TABLE students
   end
 
   def save
