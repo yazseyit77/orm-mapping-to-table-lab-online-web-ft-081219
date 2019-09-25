@@ -1,7 +1,7 @@
 class Student
 
   # Remember, you can access your database connection anywhere in this class
-  #  with DB[:conn]  
+  #  with DB[:conn]
 
   attr_accessor :name, :grade
   attr_reader :id
@@ -9,7 +9,7 @@ class Student
   def initialize(name, grade, id=nil)
     @name = name
     @grade = grade
-    @id = id 
+    @id = id
   end
 
   def self.create_table
@@ -19,7 +19,7 @@ class Student
         name TEXT,
         grade INTEGER
       )
-    SQL 
-     
-  end 
+    SQL
+
+  end
 end
