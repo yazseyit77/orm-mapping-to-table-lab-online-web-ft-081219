@@ -24,7 +24,7 @@ class Student
   end
 
   def drop_table
-
+    DROP TABLE students;
   end
 
 end
