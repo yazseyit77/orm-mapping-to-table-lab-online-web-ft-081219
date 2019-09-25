@@ -24,7 +24,14 @@ class Student
   end
 
   def self.drop_table
-    DB[:conn].execute(DROP TABLE students)
+   DB[:conn].execute(DROP TABLE students)
+  end
+
+  def save
+    sql = <<-SQL
+      INSERT INTO students (name, grade)
+      VALUES (?, ?)
+      SQL
   end
 
 end
